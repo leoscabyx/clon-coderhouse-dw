@@ -1,0 +1,64 @@
+/* --- Seccion Cursos - Cursos --- */
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.curso {
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 360px;
+    
+
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.curso.curso--dark {
+    background-color: #323232;
+}
+
+.curso__flex {
+    display: flex;
+    gap: 10px;
+}
+
+.curso__icono {
+    font-size: 32px;
+    color: $color-primario;
+}
+
+.curso__header {
+    width: 50px;
+    padding: 5px;
+    align-self: flex-start;
+}
+
+.curso__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curso__parrafo {
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+}
+
+.curso__precio {
+    position: absolute;
+    background-color: $color-primario;
+    color: #000;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+}

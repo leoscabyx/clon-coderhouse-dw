@@ -1,0 +1,110 @@
+/* Media querys */
+
+@media (max-width: 768px) {
+    .navegacion {
+        flex-direction: column;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .flex-strech {
+        flex-direction: column;
+    }
+
+    .titulo-documento {
+        font-size: 3rem;
+        width: 100%;
+
+    }
+
+    .seccion {
+        height: auto;
+    }
+
+    .seccion__titulo {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .flex-center {
+        flex-direction: column;
+    }
+
+    .destacado {
+        width: 90%;
+        flex-basis: auto;
+    }
+
+    .payments.flex-center {
+        align-items: stretch;
+    }
+
+    .payment {
+        justify-content: flex-start;
+    }
+
+    .payment--more {
+        align-self: flex-end;
+    }
+
+    .redes .flex-center {
+        flex-direction: row;
+    }
+
+    /* Cursos.html */
+    .cursos {
+        flex-direction: column;
+    }
+
+    .curso {
+        flex-basis: auto;
+    }
+
+    /* Equipo.html */
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+        ;
+    }
+
+    /* Contacto.html */
+    .mapa {
+        position: relative;
+        width: 100%;
+    }
+
+    /* PreguntasFrecuentes.html */
+    .metodos {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .metodo {
+        width: 100%;
+    }
+
+    .titulo-documento {
+        min-width: $ancho-minimo - 180;
+    }
+}
+
+
+@media (min-width: 768px) {
+    @include generarColumnas('md');
+}
+
+@media (min-width: 1024px) {
+    @include generarColumnas('lg');
+}
+
+@media (min-width: 1200px) {
+    @include generarColumnas('xl');
+}

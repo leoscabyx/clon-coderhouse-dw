@@ -1,0 +1,36 @@
+/* --- Seccion Preguntas Frecuentes - PreguntasFrecuentes-html --- */
+
+.seccion--pf {
+    background-image: linear-gradient(to bottom, black 80%, #E0FF00 100%);
+}
+
+.seccion__w50 {
+    width: 50%;
+    height: 300px;
+    padding: 2rem 0;
+}
+
+.seccion__img-pf {
+    width: 100%;
+    height: 100%;
+}
+
+.metodos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.metodo {
+    width: 50%;
+    flex-shrink: 0;
+
+    padding: 1rem;
+}
+
+.metodo__pregunta {
+    margin-bottom: 1rem;
+}
+
+.metodo__respuesta {
+    color: rgba(229, 229, 229, 0.314);
+}

@@ -1,0 +1,31 @@
+/* --- NAVEGACION ---*/
+.navegacion {
+/*     display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    @include centrarContenido(space-between, center);
+    padding: 1rem;
+}
+
+.navegacion .navegacion__link-logo {
+    height: 32px;
+}
+
+.navegacion .navegacion__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navegacion .navegacion__enlace {
+    display: inline-block;
+    padding: 1rem;
+    transition: all 1s;
+}
+
+.navegacion__enlace:hover {
+    color: $color-primario;
+    border: 2px solid $color-primario;
+    border-radius: 5px;
+    text-decoration: line-through;
+}

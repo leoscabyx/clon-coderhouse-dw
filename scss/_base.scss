@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Tamaño de la fuente raiz para el documento 2rem = 16px * 2 */
+}
+
+body {
+    font-family: $tipografia-textos;
+    @if $modo-oscuro == true {
+        background-color: $color-alternativo; // Negro de Fondo
+    } @else if $modo-oscuro == false {
+        background-color: $color-primario; // Amarillo de Fondo
+        
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: $tipografia-titulos; */
+    @if $modo-oscuro == true {
+        color: $color-texto-oscuro;
+    } @else if $modo-oscuro == false {
+        color: $color-texto-claro;
+    }
+}
+
+a {
+    text-decoration: none;
+    @if $modo-oscuro == true {
+        color: $color-texto-oscuro;
+    } @else if $modo-oscuro == false {
+        color: $color-texto-claro;
+    }
+}
+
+ul, ol {
+    list-style-type: none;
+}

@@ -1,0 +1,25 @@
+$color-primario: #E0FF00;
+$color-secundario: #333333;
+$color-alternativo: #121212;
+
+$tipografia-titulos: 'Qahiri', sans-serif;
+$tipografia-textos:'Roboto-Leo', sans-serif;
+
+$ancho-maximo: 900px;
+
+$ancho-minimo: 500px;
+
+$modo-oscuro: true;
+
+$color-texto-oscuro: #fff;
+$color-texto-claro: #000;
+
+/* $color-texto-primario: #E0FF00;
+$color-fondo-primario: #E0FF00; */
+
+$colores: (
+    success: green,
+    danger: red,
+    warning: yellow,
+    info: blue
+);

@@ -1,0 +1,45 @@
+/* Seccion Contacto - Contacto.html */
+
+.seccion--contacto .seccion__parrafo {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.mapa {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.mapa__iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.mapa__texto {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: $color-primario;
+    color: #000;
+    opacity: 1;
+    transition: top 1.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.mapa:hover .mapa__texto {
+    top: 0;
+}
